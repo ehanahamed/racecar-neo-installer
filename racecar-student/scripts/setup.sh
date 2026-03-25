@@ -145,7 +145,7 @@ elif [ "$PLATFORM" == 'linux' ]; then
 RACECAR_IP=127.0.0.1
 RACECAR_TEAM=student
 RACECAR_CONFIG_LOADED=TRUE
-sudo sysctl -w net.ipv4.udp_mem="65535 131071 262142"" > "${SCRIPT_DIR}/.config"
+sudo sysctl -w net.ipv4.udp_mem=\"65535 131071 262142\"" > "${SCRIPT_DIR}/.config"
 
     # Linux tool command
     sed '/# RACECAR_ALIASES$/d' -i ~/.bashrc
